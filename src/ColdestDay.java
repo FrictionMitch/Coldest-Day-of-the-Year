@@ -125,7 +125,7 @@ public class ColdestDay {
     }
 
 //    public String fileWithColdestTemperature() {
-    public void fileWithColdestTemperature() {
+    public CSVRecord fileWithColdestTemperature() {
         CSVRecord smallestSoFar = null;
         DirectoryResource dr = new DirectoryResource();
         String fileName = null;
@@ -137,18 +137,25 @@ public class ColdestDay {
             fileName = file.getName();
         }
 //        return fileName;
-        return smallestSoFar;
         System.out.println("The coldest day was in file: " + fileName);
-        FileResource fileResource = new FileResource(fileName);
+        String location = "weather/nc_weather/2014/" + fileName;
+        FileResource fileResource = new FileResource(location);
         CSVRecord smallestDay = coldestHourInFile(fileResource.getCSVParser());
         System.out.println("The coldest temperature on that day was: " + smallestDay.get("TemperatureF") +
                            " at " + smallestDay.get("DateUTC"));
+        System.out.println("All the temperatures on that day (the coldest day) were:");
+
+        for(CSVRecord curentRow : fileResource.getCSVParser()) {
+            System.out.println((curentRow.get("DateUTC")) + " : " + (curentRow.get("TemperatureF")));
+        }
+        return smallestSoFar;
     }
 
     public void testColdestFileName() {
 //        String name = fileWithColdestTemperature();
 //        System.out.println(name);
         CSVRecord smallest = fileWithColdestTemperature();
+
 
     }
 }
