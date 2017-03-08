@@ -123,15 +123,16 @@ public class ColdestDay {
 
 
     public CSVRecord lowestHumidityInFile (CSVParser parser) {
+        double currentHumidity;
         CSVRecord lowestSoFar = null;
         for (CSVRecord currentRow : parser) {
             if (lowestSoFar == null) {
                 lowestSoFar = currentRow;
             } else {
-                if(currentRow.get("Humidity").equals("N/A")) {
-                    currentRow.get("Humidity").equals("9999");
+                if(currentRow.get("Humidity").contains("N/A")) {
+                    currentHumidity = 9999;
                 }
-                double currentHumidity = Double.parseDouble(currentRow.get("Humidity"));
+                currentHumidity = Double.parseDouble(currentRow.get("Humidity"));
                 double lowestHumidity = Double.parseDouble(lowestSoFar.get("Humidity"));
 
                 if (currentHumidity < lowestHumidity ) {
