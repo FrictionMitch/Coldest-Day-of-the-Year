@@ -4,7 +4,9 @@ public class Main {
         ColdestDay coldestDay = new ColdestDay();
         coldestDay.testColdestInDay();
 //        coldestDay.testColdestInManyDays();
-        coldestDay.testColdestFileName();
+//        coldestDay.testColdestFileName();
 //        coldestDay.fileWithColdestTemperature();
+        coldestDay.testLowestHumidityInFile();
+        coldestDay.testAverageTemperatureInFile();
     }
 }
