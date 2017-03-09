@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51e88c43-d946-44a8-8789-2fbb534c2b04" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coldest Day of the Year/ColdestDay.class" afterPath="$PROJECT_DIR$/out/production/Coldest Day of the Year/ColdestDay.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Coldest Day of the Year/Main.class" afterPath="$PROJECT_DIR$/out/production/Coldest Day of the Year/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ColdestDay.java" afterPath="$PROJECT_DIR$/src/ColdestDay.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
     </list>
     <ignored path="Coldest Day of the Year.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -543,12 +539,18 @@
       <option name="project" value="LOCAL" />
       <updated>1488972290058</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Exam Complete&#10;&#10;">
+      <created>1488993867453</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1488993867453</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="810" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -591,7 +593,8 @@
     <MESSAGE value="Part2 in works&#10;" />
     <MESSAGE value="Part2 Complete&#10;&#10;" />
     <MESSAGE value="Part6 in progress&#10;&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Part6 in progress&#10;&#10;" />
+    <MESSAGE value="Exam Complete&#10;&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exam Complete&#10;&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
